@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>AppPedido</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>PedidoController</display-name>
+    <servlet-name>PedidoController</servlet-name>
+    <servlet-class>controle.PedidoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PedidoController</servlet-name>
+    <url-pattern>/PedidoController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AcessoController</display-name>
+    <servlet-name>AcessoController</servlet-name>
+    <servlet-class>controle.AcessoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AcessoController</servlet-name>
+    <url-pattern>/AcessoController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmpresaController</display-name>
+    <servlet-name>EmpresaController</servlet-name>
+    <servlet-class>controle.EmpresaController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmpresaController</servlet-name>
+    <url-pattern>/EmpresaController</url-pattern>
+  </servlet-mapping>
+</web-app>

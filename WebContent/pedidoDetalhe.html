@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AppPedido</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Cadastro de Pedido</h2>
+  <form action="PedidoController" method="get">
+    <div class="form-group">
+      <label for="descricao">Descrição:</label>
+      <input type="text" class="form-control" id="descricao" placeholder="Entre com a descrição" name="descricao">
+    </div>
+    
+    <div class="form-group">
+      <label for="observacao">Observação:</label>
+      <input type="text" class="form-control" id="observacao" placeholder="Entre com a observação" name="observacao">
+    </div>
+
+    <div class="form-group">
+      <label for="valor">Valor:</label>
+      <input type="text" class="form-control" id="valor" placeholder="Entre com o valor" name="valor">
+    </div>        
+      
+    <div class="form-group">  
+      <input type="checkbox" id="entregue" name="entregue" value="Entregue">
+      <label for="entregue"> Entregue</label>
+      </div>       
+
+    <button type="submit" class="btn btn-default">Cadastrar</button>
+  
+  </form>
+</div>
+
+</body>
+</html>
